@@ -1,4 +1,4 @@
-sdjkf# This function adds two numbers
+# This function adds two numbers
 def addition(x, y):
     return x + y
 
