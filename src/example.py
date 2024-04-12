@@ -3,15 +3,21 @@ def addition(x, y):
     return x + y
 
 # This function subtracts two numbers
+
+
 def subtraction(x, y):
     return x - y
 
 # This function multiplies two numbers
+
+
 def multiplication(x, y):
     return x * y
 
 # This function divides two numbers
-def division(x, y):
+
+
+def division1(x, y):
     return x / y
 
 
@@ -44,12 +50,12 @@ while True:
             print(num1, "*", num2, "=", multiplication(num1, num2))
 
         elif selection == 4:
-            print(num1, "/", num2, "=", division(num1, num2))
-        
+            print(num1, "/", num2, "=", division1(num1, num2))
+
         # check if user wants another calculation
         # break the while loop if answer is no
         next_calculation = input("Calculate again? (Y/N): ")
         if next_calculation == "no":
-          break
+            break
     else:
         print("Invalid Input")
