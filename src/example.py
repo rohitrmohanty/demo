@@ -14,12 +14,17 @@ def multiplication(x, y):
 def division(x, y):
     return x / y
 
+# This function the exponentiation operator uses right-sided binding to calculate two numbers
+def exponentiation(x, y):
+    return x ** y
+
 
 print("Select operation.")
 print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
+
 
 while True:
     # accept input from the user
