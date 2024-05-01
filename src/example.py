@@ -29,10 +29,10 @@ print("5.Exponent")
 
 while True:
     # accept input from the user
-    selection = int(input("Enter operation to compute(1/2/3/4): "))
+    selection = int(input("Enter operation to compute(1/2/3/4/5): "))
     print(type(selection))
     # check if the input is one of the options
-    if selection in (1, 2, 3, 4):
+    if selection in (1, 2, 3, 4, 5):
         try:
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
@@ -51,11 +51,14 @@ while True:
 
         elif selection == 4:
             print(num1, "/", num2, "=", division(num1, num2))
+
+        elif selection == 5:
+            print(num1, "**", num2, "=", exponentiation(num1, num2))
         
         # check if user wants another calculation
         # break the while loop if answer is no
         next_calculation = input("Calculate again? (Y/N): ")
-        if next_calculation == "no":
+        if next_calculation == "NO":
           break
     else:
         print("Invalid Input")
