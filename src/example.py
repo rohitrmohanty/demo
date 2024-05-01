@@ -56,9 +56,9 @@ while True:
             print(num1, "**", num2, "=", exponentiation(num1, num2))
         
         # check if user wants another calculation
-        # break the while loop if answer is no
+        # break the while loop if answer is N
         next_calculation = input("Calculate again? (Y/N): ")
-        if next_calculation == "NO":
+        if next_calculation == "N":
           break
     else:
         print("Invalid Input")
